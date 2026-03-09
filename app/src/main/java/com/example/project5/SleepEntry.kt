@@ -5,7 +5,17 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "sleep_entries")
 data class SleepEntry(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+
     val date: String,
+
+    val startTime: String,
+
+    val endTime: String,
+
+    val hours: Double,
+
     val hoursSlept: Double
 )

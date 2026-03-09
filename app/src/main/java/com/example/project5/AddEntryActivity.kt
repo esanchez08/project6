@@ -27,6 +27,9 @@ class AddEntryActivity : AppCompatActivity() {
             if (hours != null) {
                 val entry = SleepEntry(
                     date = LocalDate.now().toString(),
+                    startTime = "22:00",
+                    endTime = "06:00",
+                    hours = hours,
                     hoursSlept = hours
                 )
                 lifecycleScope.launch(Dispatchers.IO) {
